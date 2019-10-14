@@ -26,27 +26,27 @@
 
 /* Size of the Data Set */
 #define SIZE (40)
-double find_median(unsigned char *arr, int arrLen){
+unsigned char find_median(unsigned char *arr, int arrLen){
 	//sortArr = sort_array(arr[], arrLen);
 	int n = arrLen;
 	if (n % 2 !=0){	//Checking for even case
-		return (double)arr[n/2];
+		return (unsigned char)arr[n/2];
 	}
-	return (double) ((double)arr[(n-1)/2] + (double) arr[n/2])/2.0;
+	return (unsigned char) (arr[(n-1)/2] + arr[n/2])/2.0;
 
 }
-double find_mean(unsigned char *arr, int arrLen){
+unsigned char find_mean(unsigned char *arr, int arrLen){
 	int sum = 0;
 	for (int i=0;i<arrLen;i++){
 		sum += (int) arr[i]; 
 	}
-	return (double) sum/ (double) arrLen;
+	return (unsigned char) sum/ (unsigned char) arrLen;
 }
-double find_maximum(unsigned char *arr, int arrLen){
-	return (double) arr[0];
+unsigned char find_maximum(unsigned char *arr, int arrLen){
+	return (unsigned char) arr[0];
 }
-double find_minimum(unsigned char *arr, int arrLen){
-	return (double) arr[arrLen-1];
+unsigned char find_minimum(unsigned char *arr, int arrLen){
+	return (unsigned char) arr[arrLen-1];
 }
 void sort_array(unsigned char *arr, int arrLen){
 	for (int i=0;i < arrLen;i++){
@@ -62,17 +62,17 @@ void sort_array(unsigned char *arr, int arrLen){
 }
 void print_statistics(unsigned char *arr, int arrLen){
 	/* Find the median of the array*/
-	double median = find_median(arr, arrLen);
-	printf("Median : %f \n", median );
+	unsigned char median = find_median(arr, arrLen);
+	printf("Median : %d \n", median );
 	/* Find the mean of the array*/
-	double mean = find_mean(arr, arrLen);
-	printf("Mean : %f \n", mean );
+	unsigned char mean = find_mean(arr, arrLen);
+	printf("Mean : %d \n", mean );
 	/* Find the max of the array*/
-	double max = find_maximum(arr, arrLen);
-	printf("Maximum : %f \n", max );
+	unsigned char max = find_maximum(arr, arrLen);
+	printf("Maximum : %d \n", max );
 	/* Find the min of the array*/
-	double min = find_minimum(arr, arrLen);
-	printf("Minimum : %f \n", min );
+	unsigned char min = find_minimum(arr, arrLen);
+	printf("Minimum : %d \n", min );
 
 }
 void print_array(unsigned char *arr, int arrLen){
@@ -90,7 +90,7 @@ void main() {
                               201,   6,  12,  60,   8,   2,   5,  67,
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
- 
+
 	//unsigned char test[5] = {2,5, 10, 2, 1};
 
   /* Other Variable Declarations Go Here */
