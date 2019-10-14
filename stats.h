@@ -1,4 +1,4 @@
--/******************************************************************************
+/******************************************************************************
  * Copyright (C) 2017 by Alex Fosdick - University of Colorado
  *
  * Redistribution, modification or use of this software in source or binary
@@ -33,7 +33,7 @@ unsigned char find_median(unsigned char *arr, int arrLen);
  *
  * @return median of arr
  */
-unsigned char find_mean(unsigned char *arr, int arrLen)
+unsigned char find_mean(unsigned char *arr, int arrLen);
 /**
  * @brief   Given an array of data and a length, returns the mean
  *
@@ -44,7 +44,7 @@ unsigned char find_mean(unsigned char *arr, int arrLen)
  *
  * @return mean of arr
  */
-unsigned char find_maximum(unsigned char *arr, int arrLen)
+unsigned char find_maximum(unsigned char *arr, int arrLen);
 /**
  * @brief   Given an array of data and a length, returns the maximum
  *
@@ -55,7 +55,7 @@ unsigned char find_maximum(unsigned char *arr, int arrLen)
  *
  * @return max of arr
  */
-unsigned char find_minimum(unsigned char *arr, int arrLen)
+unsigned char find_minimum(unsigned char *arr, int arrLen);
 /**
  * @brief  Given an array of data and a length, returns the minimum
  *
@@ -66,7 +66,7 @@ unsigned char find_minimum(unsigned char *arr, int arrLen)
  *
  * @return min of arr
  */
-void sort_array(unsigned char *arr, int arrLen)
+void sort_array(unsigned char *arr, int arrLen);
 /**
  * @brief   Given an array of data and a length, sorts the array from largest to smallest. (The zeroth Element should be the largest value, and the last element (n-1) should be the smallest value. )
  *
@@ -77,7 +77,7 @@ void sort_array(unsigned char *arr, int arrLen)
  *
  * @return 
  */
-void print_statistics(unsigned char *arr, int arrLen)
+void print_statistics(unsigned char *arr, int arrLen);
 /**
  * @brief   A function that prints the statistics of an array including minimum, maximum, mean, and median.
  *
@@ -88,7 +88,7 @@ void print_statistics(unsigned char *arr, int arrLen)
  *
  * @return 
  */
-void print_array(unsigned char *arr, int arrLen)
+void print_array(unsigned char *arr, int arrLen);
 /**
  * @brief    Given an array of data and a length, prints the array to the screen
  *

@@ -40,7 +40,7 @@ unsigned char find_mean(unsigned char *arr, int arrLen){
 	for (int i=0;i<arrLen;i++){
 		sum += (int) arr[i]; 
 	}
-	return (unsigned char) sum/ (unsigned char) arrLen;
+	return (unsigned char) (sum/arrLen);
 }
 unsigned char find_maximum(unsigned char *arr, int arrLen){
 	return (unsigned char) arr[0];
